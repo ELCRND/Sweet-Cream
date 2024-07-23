@@ -147,14 +147,8 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: var(--bg-color);
   color: #fff;
   position: relative;
-}
-@media screen and (max-width: 768px) {
-  body {
-    background-color: #000;
-  }
 }
 
 .tooltip {
@@ -162,16 +156,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--red);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 24px;
   position: fixed;
-  top: 10%;
+  top: 15%;
   left: 50%;
   translate: -50% 0;
   opacity: 0;
   display: none;
   transition: all 400ms ease;
   z-index: 21;
+}
+@media screen and (max-width: 1079px) {
+  .tooltip {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
 }
 
 .tooltip.visible {
@@ -531,6 +531,7 @@ body {
 @media screen and (max-width: 1079px) {
   .about__site-map {
     margin-bottom: 41px;
+    flex-direction: row-reverse;
     gap: 11px;
     font-size: 12px;
   }

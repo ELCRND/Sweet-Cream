@@ -25,6 +25,7 @@ body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
   color: #fff;
+  position: relative;
 
   @media screen and (max-width: 768px) {
     background-color: #000;

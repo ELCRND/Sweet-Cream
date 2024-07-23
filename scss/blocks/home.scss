@@ -8,7 +8,6 @@
 
   @media screen and (max-width: 1079px) {
     min-height: 449px;
-    background-image: url("../public/img/home/home_bg_mobile.jpg");
     overflow: visible;
   }
 
@@ -23,10 +22,6 @@
     background-size: cover;
     background-position: center;
     z-index: 2;
-
-    @media screen and (max-width: 1079px) {
-      display: none;
-    }
   }
 
   &::after {
@@ -64,10 +59,10 @@
     transition: filter 200ms ease;
 
     @media screen and (max-width: 1079px) {
-      width: 99px;
+      width: 90px;
       height: 27px;
+      border-radius: 7px;
       font-size: 12px;
-      clip-path: none !important;
     }
 
     &:active {
@@ -87,6 +82,12 @@
         top: 148px;
         left: 9px;
         translate: 0;
+        clip-path: none;
+      }
+      @media screen and (max-width: 768px) {
+        left: 50%;
+        translate: -180% 0;
+        clip-path: polygon(0 0, 90% 0, 89% 100%, 0% 100%);
       }
     }
     &:nth-of-type(2) {
@@ -107,6 +108,19 @@
         left: auto;
         right: 7px;
         translate: 0;
+        clip-path: none;
+      }
+      @media screen and (max-width: 768px) {
+        left: 50%;
+        translate: 100% 0;
+        clip-path: polygon(
+          100% 0,
+          100% 100%,
+          7% 100%,
+          6.2% 55%,
+          6.6% 35%,
+          5.8% 0
+        );
       }
     }
     &:nth-of-type(3) {
@@ -120,6 +134,12 @@
         left: auto;
         right: 27px;
         translate: 0;
+        clip-path: none;
+      }
+      @media screen and (max-width: 768px) {
+        left: 50%;
+        translate: 90% 0;
+        clip-path: polygon(13% 0, 100% 0, 100% 100%, 13.7% 100%, 12% 38%);
       }
     }
   }
@@ -171,6 +191,8 @@
     height: 40px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 8px;
+    border-width: 1px;
     font-size: 14px;
     bottom: 57px;
 

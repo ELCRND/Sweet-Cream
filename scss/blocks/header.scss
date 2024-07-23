@@ -40,7 +40,7 @@
         rgba(102, 102, 102, 0.21) 100%
       );
       font-size: 14px;
-      text-transform: capitalize;
+      text-transform: none;
     }
 
     li {
@@ -51,6 +51,15 @@
           display: block;
           margin-left: 27px;
           margin-right: 27px;
+        }
+      }
+
+      &:nth-of-type(5) {
+        span {
+          display: none;
+          @media screen and (max-width: 1079px) {
+            display: inline;
+          }
         }
       }
     }

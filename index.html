@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Cream</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -13,12 +14,12 @@
     <header class="header">
         <nav class="header__navigation">
             <ul>
-                <li><a href="#about">about</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="javascript:void(0)" class="socials">TWITTER</a></li>
                 <li><a href="javascript:void(0)" class="socials">TELEGRAM</a></li>
                 <li><a href="#roadmap">Road Map</a></li>
-                <li><a href="javascript:void(0)" class="socials">DEXTTOLS</a></li>
-                <li><a href="#buy">How to buy</a></li>
+                <li><a href="#buy"><span>How to</span> buy</a></li>
+                <li><a href="javascript:void(0)" class="socials">DEXTOOLS</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +30,7 @@
 
         <a href="javascript:void(0)">Buy token</a>
         <a href="javascript:void(0)">Join telegram</a>
-        <a href="javascript:void(0)">Dexttols</a>
+        <a href="javascript:void(0)">Dextools</a>
 
         <div class="home__token">
             <span class="token__code">Contract Address</span>
@@ -55,7 +56,7 @@
 
 
     <!-- ABOUT -->
-    <section class="about">
+    <section class="about" id="about">
 
         <div class="about__site-map">
             <span>about</span>
@@ -73,11 +74,13 @@
                 </p>
                 <a href="javascript:void(0)" class="about__btn">
                     <span>Read more</span>
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M22 2C22 0.89543 21.1046 -7.48422e-07 20 9.4515e-08L2 -3.26954e-07C0.895431 -3.26954e-07 5.74219e-07 0.89543 5.74219e-07 2C5.74219e-07 3.10457 0.895431 4 2 4L18 4L18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20L22 2ZM3.41421 21.4142L21.4142 3.41421L18.5858 0.585786L0.585786 18.5858L3.41421 21.4142Z"
-                            fill="black" />
-                    </svg>
+                    <div>
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 2C22 0.89543 21.1046 -7.48422e-07 20 9.4515e-08L2 -3.26954e-07C0.895431 -3.26954e-07 5.74219e-07 0.89543 5.74219e-07 2C5.74219e-07 3.10457 0.895431 4 2 4L18 4L18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20L22 2ZM3.41421 21.4142L21.4142 3.41421L18.5858 0.585786L0.585786 18.5858L3.41421 21.4142Z"
+                                fill="black" />
+                        </svg>
+                    </div>
                 </a>
             </div>
 
@@ -89,7 +92,7 @@
 
 
     <!-- ROADMAP -->
-    <section class="roadmap">
+    <section class="roadmap" id="roadmap">
 
         <div class="roadmap__site-map">
             <span>Sweet Cream</span>
@@ -141,18 +144,20 @@
 
         <a href="javascript:void(0)" class="roadmap__btn">
             <span>Full road map</span>
-            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M22.9293 2C22.9293 0.911986 22.0206 0.0299778 20.8997 0.0299786L2.63392 0.0299782C1.51303 0.0299782 0.60438 0.911987 0.60438 2C0.60438 3.08801 1.51303 3.97002 2.63392 3.97002L18.8702 3.97002L18.8702 19.7302C18.8702 20.8182 19.7789 21.7002 20.8997 21.7002C22.0206 21.7002 22.9293 20.8182 22.9293 19.7302L22.9293 2ZM3.79106 21.393L22.3348 3.39302L19.4646 0.606984L0.920859 18.607L3.79106 21.393Z"
-                    fill="black" />
-            </svg>
+            <div>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.9293 2C22.9293 0.911986 22.0206 0.0299778 20.8997 0.0299786L2.63392 0.0299782C1.51303 0.0299782 0.60438 0.911987 0.60438 2C0.60438 3.08801 1.51303 3.97002 2.63392 3.97002L18.8702 3.97002L18.8702 19.7302C18.8702 20.8182 19.7789 21.7002 20.8997 21.7002C22.0206 21.7002 22.9293 20.8182 22.9293 19.7302L22.9293 2ZM3.79106 21.393L22.3348 3.39302L19.4646 0.606984L0.920859 18.607L3.79106 21.393Z"
+                        fill="black" />
+                </svg>
+            </div>
         </a>
 
     </section>
 
 
     <!-- BUY -->
-    <section class="buy">
+    <section class="buy" id="buy">
 
         <div class="buy__site-map">
             <span>How to buy</span>
@@ -170,7 +175,7 @@
                     wallet
                     and securely store your recovery phrase.
                 </p>
-                <img src="public/img/buy/create_icon.png" alt="" width="34" height="36" loading="lazy">
+                <img src="public/img/buy/wallet_icon.png" alt="" width="36" height="36" loading="lazy">
             </div>
 
             <div class="buy__phase-2">
@@ -178,7 +183,7 @@
                 <p>
                     Purchase Solana (SOL) from a cryptocurrency exchange (e.g., Coinbase, Binance).
                 </p>
-                <img src="public/img/buy/sol_icon.png" alt="" width="34" height="35" loading="lazy">
+                <img src="public/img/buy/buy_icon.png" alt="" width="36" height="36" loading="lazy">
             </div>
 
             <div class="buy__phase-3">
@@ -187,13 +192,48 @@
                     Open the Raydium, Enter the $CREAM contract address into the search bar on the DEX to find the
                     token.
                 </p>
-                <img src="public/img/buy/$cream_icon.png" alt="" width="34" height="35" loading="lazy">
+                <img src="public/img/buy/sol_icon.png" alt="" width="36" height="36" loading="lazy">
             </div>
         </div>
 
         <img class="buy__img" src="public/img/buy/buy_pointer.png" alt="" width="370" height="370" loading="lazy">
 
     </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__navigation">
+                <h2 class="footer__title">Sweet Cream</h2>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#buy">Buy token</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__socials">
+                <h3>Media Links</h3>
+                <ul>
+                    <li><a href="javascript:void(0)">Twitter</a></li>
+                    <li><a href="javascript:void(0)">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__buy">
+                <h3>How to buy</h3>
+                <a href="javascript:void(0)">Dextools</a>
+            </div>
+
+            <div class="footer__follow">
+                <h3>Follow Us</h3>
+            </div>
+
+
+
+        </div>
+    </footer>
 
     <div class="tooltip">Copied</div>
 

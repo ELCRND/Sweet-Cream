@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Monofett&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @font-face {
-  font-family: "Merge One";
-  src: url("../public/fonts/MergeOne-Regular.ttf");
+  font-family: "Century Gothic";
+  src: url("../public/fonts/centurygothic.ttf");
+}
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url("../public/fonts/centurygothic_bold.ttf");
 }
 
 :root {
-  --font-family: "Merge One", sans-serif;
-  --second-family: "Monofett", sans-serif;
-  --third-family: "Manrope", sans-serif;
-  --bg-color: #050611;
-  --red: #f85c5c;
+  --font-family: "Nunito", sans-serif;
+  --second-family: "Century Gothic", sans-serif;
 }
 
 * {
@@ -59,9 +60,4 @@ body {
   to {
     opacity: 1;
   }
-}
-
-.scroll-off {
-  max-height: 100vh;
-  overflow: hidden;
 }

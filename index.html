@@ -5,10 +5,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Cream</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="header__navigation">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="javascript:void(0)" class="socials">TWITTER</a></li>
+                <li><a href="javascript:void(0)" class="socials">TELEGRAM</a></li>
+                <li><a href="#roadmap">Road Map</a></li>
+                <li><a href="javascript:void(0)" class="socials">DEXTTOLS</a></li>
+                <li><a href="#buy">How to buy</a></li>
+            </ul>
+        </nav>
+    </header>
 
+
+    <!-- HOME -->
+    <section class="home">
+
+        <a href="javascript:void(0)">Buy token</a>
+        <a href="javascript:void(0)">Join telegram</a>
+        <a href="javascript:void(0)">Dexttols</a>
+
+        <div class="home__token">
+            <span class="token__code">Contract Address</span>
+            <button type="button" class="token__copy">
+                <svg width="36" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="36" height="36" fill="url(#pattern0_2_100)" />
+                    <defs>
+                        <pattern id="pattern0_2_100" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_2_100" transform="scale(0.0078125)" />
+                        </pattern>
+                        <image id="image0_2_100" width="128" height="128"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+
+            </button>
+        </div>
+
+        <img class="home__img" src="public/img/home/home_pointer.png" alt="" width="307" height="307">
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about">
+
+        <div class="about__site-map">
+            <span>about</span>
+            <div></div>
+            <span>Sweet Cream</span>
+        </div>
+
+        <div class="about__container">
+
+            <div class="about__text">
+                <h2 class="about__title">About</h2>
+                <p class="about__description">
+                    Sweet Cream is a humorous and unique meme token that plays on the notion
+                    of "cream on male organs," with a playful twist towards sweetness and fun.
+                </p>
+                <a href="javascript:void(0)" class="about__btn">
+                    <span>Read more</span>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22 2C22 0.89543 21.1046 -7.48422e-07 20 9.4515e-08L2 -3.26954e-07C0.895431 -3.26954e-07 5.74219e-07 0.89543 5.74219e-07 2C5.74219e-07 3.10457 0.895431 4 2 4L18 4L18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20L22 2ZM3.41421 21.4142L21.4142 3.41421L18.5858 0.585786L0.585786 18.5858L3.41421 21.4142Z"
+                            fill="black" />
+                    </svg>
+                </a>
+            </div>
+
+            <img src="public/img/about/about_img_1.png" alt="" width="280" height="483" loading="lazy">
+            <img src="public/img/about/about_img_2.png" alt="" width="490" height="467" loading="lazy">
+
+        </div>
+    </section>
+
+
+    <!-- ROADMAP -->
+    <section class="roadmap">
+
+        <div class="roadmap__site-map">
+            <span>Sweet Cream</span>
+            <div></div>
+            <span>roadmap</span>
+        </div>
+
+        <h2 class="roadmap__title">Road map</h2>
+
+        <ol class="roadmap__phases">
+
+            <li>
+                <div>
+                    <picture>
+                        <source media="(max-width:768px)" srcset="public/img/roadmap/roadmap_img_1_mobile.png"
+                            width="21" height="27">
+                        <img src="public/img/roadmap/roadmap_img_1.png" alt="" width="92" height="191" loading="lazy">
+                    </picture>
+                </div>
+                <span><b>Phase 1:</b> token creation, website launch, airdrop and giveaway </span>
+                <a href="javascript:void(0)">Ready</a>
+            </li>
+
+            <li>
+                <div>
+                    <picture>
+                        <source media="(max-width:768px)" srcset="public/img/roadmap/roadmap_img_2_mobile.png"
+                            width="21" height="27">
+                        <img src="public/img/roadmap/roadmap_img_2.png" alt="" width="125" height="207" loading="lazy">
+                    </picture>
+                </div>
+                <span><b>Phase 2:</b> initial marketing, listing on DEXs, partnerships </span>
+                <a href="javascript:void(0)">Not Ready</a>
+            </li>
+
+            <li>
+                <div>
+                    <picture>
+                        <source media="(max-width:768px)" srcset="public/img/roadmap/roadmap_img_3_mobile.png"
+                            width="21" height="27">
+                        <img src="public/img/roadmap/roadmap_img_3.png" alt="" width="97" height="214" loading="lazy">
+                    </picture>
+                </div>
+                <span><b>Phase 1:</b> merchandise, utility development</span>
+                <a href="javascript:void(0)">Not Ready</a>
+            </li>
+
+        </ol>
+
+        <a href="javascript:void(0)" class="roadmap__btn">
+            <span>Full road map</span>
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22.9293 2C22.9293 0.911986 22.0206 0.0299778 20.8997 0.0299786L2.63392 0.0299782C1.51303 0.0299782 0.60438 0.911987 0.60438 2C0.60438 3.08801 1.51303 3.97002 2.63392 3.97002L18.8702 3.97002L18.8702 19.7302C18.8702 20.8182 19.7789 21.7002 20.8997 21.7002C22.0206 21.7002 22.9293 20.8182 22.9293 19.7302L22.9293 2ZM3.79106 21.393L22.3348 3.39302L19.4646 0.606984L0.920859 18.607L3.79106 21.393Z"
+                    fill="black" />
+            </svg>
+        </a>
+
+    </section>
+
+
+    <!-- BUY -->
+    <section class="buy">
+
+        <div class="buy__site-map">
+            <span>How to buy</span>
+            <div></div>
+            <span>Sweet Cream</span>
+        </div>
+
+        <h2 class="buy__title">Road map</h2>
+
+        <div class="buy__phases">
+            <div class="buy__phase-1">
+                <h3>Create wallet</h3>
+                <p>
+                    Choose a Solana-compatible wallet such as Phantom or Sollet. Follow the prompts to create a new
+                    wallet
+                    and securely store your recovery phrase.
+                </p>
+                <img src="public/img/buy/create_icon.png" alt="" width="34" height="36" loading="lazy">
+            </div>
+
+            <div class="buy__phase-2">
+                <h3>Buy SOL</h3>
+                <p>
+                    Purchase Solana (SOL) from a cryptocurrency exchange (e.g., Coinbase, Binance).
+                </p>
+                <img src="public/img/buy/sol_icon.png" alt="" width="34" height="35" loading="lazy">
+            </div>
+
+            <div class="buy__phase-3">
+                <h3>Buy $CREAM</h3>
+                <p>
+                    Open the Raydium, Enter the $CREAM contract address into the search bar on the DEX to find the
+                    token.
+                </p>
+                <img src="public/img/buy/$cream_icon.png" alt="" width="34" height="35" loading="lazy">
+            </div>
+        </div>
+
+        <img class="buy__img" src="public/img/buy/buy_pointer.png" alt="" width="370" height="370" loading="lazy">
+
+    </section>
+
+    <div class="tooltip">Copied</div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
